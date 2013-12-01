@@ -1,6 +1,6 @@
 {
   "name": "function-name",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get the name of a named function",
   "main": "function-name.js",
   "keywords": [
