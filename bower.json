@@ -1,0 +1,18 @@
+{
+  "name": "function-name",
+  "version": "0.0.0",
+  "description": "Get the name of a named function",
+  "main": "function-name.js",
+  "keywords": [
+    "function",
+    "func"
+    "fn",
+    "name"
+  ],
+  "ignore": [
+    ".*",
+    "test.js",
+    "component.json",
+    "package.json"
+  ]
+}
