@@ -2,7 +2,8 @@
 
 > Get the name of a named function
 
-There is a non-standard property `.name` on functions, but it's not supported in all browsers. This module tries that property then falls back to extracting the name from the function source.
+There is a non-standard [name](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name) property on functions, but it's not supported in all browsers.  
+This module tries that property then falls back to extracting the name from the function source.
 
 
 ## Install
