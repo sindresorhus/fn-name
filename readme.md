@@ -12,7 +12,7 @@ Download [manually](https://github.com/sindresorhus/function-name/releases) or w
 #### [npm](https://npmjs.org/package/function-name)
 
 ```
-npm install --save function-name
+npm install --save fn-name
 ```
 
 #### [Bower](http://bower.io)

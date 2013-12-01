@@ -1,5 +1,5 @@
 {
-  "name": "function-name",
+  "name": "fn-name",
   "version": "0.1.0",
   "description": "Get the name of a named function",
   "keywords": [
