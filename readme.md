@@ -34,7 +34,7 @@ component install sindresorhus/function-name
 ### Node.js
 
 ```js
-var functionName = require('function-name');
+var functionName = require('fn-name');
 functionName(function foo() {});
 //=> foo
 ```
