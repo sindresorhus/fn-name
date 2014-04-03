@@ -1,4 +1,4 @@
-# function-name [![Build Status](https://secure.travis-ci.org/sindresorhus/function-name.png?branch=master)](http://travis-ci.org/sindresorhus/function-name)
+# function-name [![Build Status](https://travis-ci.org/sindresorhus/function-name.svg?branch=master)](https://travis-ci.org/sindresorhus/function-name)
 
 > Get the name of a named function
 
@@ -10,26 +10,20 @@ This module tries that property then falls back to extracting the name from the 
 
 Download [manually](https://github.com/sindresorhus/function-name/releases) or with a package-manager.
 
-#### [npm](https://npmjs.org/package/function-name)
-
-```
-npm install --save fn-name
+```bash
+$ npm install --save fn-name
 ```
 
-#### [Bower](http://bower.io)
-
-```
-bower install --save function-name
+```bash
+$ bower install --save function-name
 ```
 
-#### [Component](https://github.com/component/component)
-
-```
-component install sindresorhus/function-name
+```bash
+$ component install sindresorhus/function-name
 ```
 
 
-## Examples
+## Usage
 
 ### Node.js
 
@@ -53,4 +47,4 @@ functionName(function foo() {});
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
