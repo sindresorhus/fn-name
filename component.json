@@ -1,9 +1,9 @@
 {
-  "name": "function-name",
+  "name": "fn-name",
   "version": "0.1.1",
   "description": "Get the name of a named function",
-  "main": "function-name.js",
-  "repository": "sindresorhus/function-name",
+  "main": "fn-name.js",
+  "repository": "sindresorhus/fn-name",
   "license": "MIT",
   "keywords": [
     "function",
@@ -11,5 +11,5 @@
     "fn",
     "name"
   ],
-  "scripts": ["function-name.js"]
+  "scripts": ["fn-name.js"]
 }

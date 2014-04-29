@@ -15,10 +15,10 @@
     "url": "http://sindresorhus.com"
   },
   "files": [
-    "function-name.js"
+    "fn-name.js"
   ],
-  "main": "function-name.js",
-  "repository": "sindresorhus/function-name",
+  "main": "fn-name.js",
+  "repository": "sindresorhus/fn-name",
   "scripts": {
     "test": "mocha"
   },
@@ -26,6 +26,6 @@
     "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }

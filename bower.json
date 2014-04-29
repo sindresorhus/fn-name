@@ -1,7 +1,7 @@
 {
-  "name": "function-name",
+  "name": "fn-name",
   "description": "Get the name of a named function",
-  "main": "function-name.js",
+  "main": "fn-name.js",
   "keywords": [
     "function",
     "func",

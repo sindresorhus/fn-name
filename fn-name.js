@@ -1,14 +1,14 @@
 /*!
-	function-name
+	fn-name
 	Get the name of a named function
-	https://github.com/sindresorhus/function-name
+	https://github.com/sindresorhus/fn-name
 	by Sindre Sorhus
 	MIT License
 */
 (function () {
 	'use strict';
 
-	function functionName(fn) {
+	function fnName(fn) {
 		if (typeof fn !== 'function') {
 			throw new TypeError('Expected a function.');
 		}
@@ -17,8 +17,8 @@
 	}
 
 	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = functionName;
+		module.exports = fnName;
 	} else {
-		window.functionName = functionName;
+		window.fnName = fnName;
 	}
 })();
