@@ -1,6 +1,6 @@
 {
   "name": "fn-name",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get the name of a named function",
   "keywords": [
     "function",
@@ -23,7 +23,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "~1.14.0"
+    "mocha": "*"
   },
   "engines": {
     "node": ">=0.8.0"

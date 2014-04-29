@@ -1,9 +1,9 @@
 {
   "name": "function-name",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get the name of a named function",
   "main": "function-name.js",
-  "repo": "sindresorhus/function-name",
+  "repository": "sindresorhus/function-name",
   "license": "MIT",
   "keywords": [
     "function",
