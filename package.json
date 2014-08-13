@@ -2,6 +2,7 @@
   "name": "fn-name",
   "version": "1.0.0",
   "description": "Get the name of a named function",
+  "repository": "sindresorhus/fn-name",
   "keywords": [
     "function",
     "func",
@@ -15,10 +16,8 @@
     "url": "http://sindresorhus.com"
   },
   "files": [
-    "fn-name.js"
+    "index.js"
   ],
-  "main": "fn-name.js",
-  "repository": "sindresorhus/fn-name",
   "scripts": {
     "test": "mocha"
   },

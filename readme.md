@@ -12,14 +12,6 @@ This module tries that property then falls back to extracting the name from the 
 $ npm install --save fn-name
 ```
 
-```sh
-$ bower install --save fn-name
-```
-
-```sh
-$ component install sindresorhus/fn-name
-```
-
 
 ## Usage
 
