@@ -4,5 +4,5 @@ module.exports = function (fn) {
 		throw new TypeError('Expected a function');
 	}
 
-	return fn.name || (/function ([^\(]+)/.exec(fn.toString()) || [])[1] || null;
+	return fn.displayName || fn.name || (/function ([^\(]+)/.exec(fn.toString()) || [])[1] || null;
 };
