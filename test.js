@@ -7,6 +7,7 @@ it('should return the name of named functions', function () {
 });
 
 it('anonymous', function () {
+	assert.equal(fnName(function() {}), null);
 	assert.equal(fnName(function () {}), null);
 });
 
