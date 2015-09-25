@@ -8,9 +8,7 @@ it('should return the name of named functions', function () {
 });
 
 it('anonymous', function () {
-	/* eslint-disable */
-	assert.equal(fnName(function() {}), null);
-	/* eslint-enable */
+	assert.equal(fnName(function() {}), null); // eslint-disable-line
 	assert.equal(fnName(function () {}), null);
 });
 
