@@ -19,10 +19,11 @@
     "index.js"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "xo && mocha"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "xo": "*"
   },
   "engines": {
     "node": ">=0.10.0"
