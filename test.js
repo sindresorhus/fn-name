@@ -1,24 +1,24 @@
-/* eslint-disable prefer-arrow-callback */
 import test from 'ava';
-import fn from './';
+import m from './';
 
-test('named functions', t => {
-	t.is(fn(function foo() {}), 'foo');
-	t.end();
+test('named', t => {
+	t.is(m(function foo() {}), 'foo');
 });
 
 test('anonymous', t => {
-	t.is(fn(function() {}), null); // eslint-disable-line
-	t.is(fn(function () {}), null);
-	t.end();
+	t.is(m(function() {}), null); // eslint-disable-line
+	t.is(m(function () {}), null);
+});
+
+test('arrow', t => {
+	t.is(m(() => {}), null);
 });
 
 test('nested', t => {
-	t.is(fn(function () {
+	t.is(m(function () {
 		function nested() {}
 		nested();
 	}), null);
-	t.end();
 });
 
 test('nested callback', t => {
@@ -26,8 +26,7 @@ test('nested callback', t => {
 		fn();
 	}
 
-	t.is(fn(function () {
+	t.is(m(function () {
 		call(function callback() {});
 	}), null);
-	t.end();
 });
