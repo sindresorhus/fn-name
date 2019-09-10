@@ -1,24 +1,27 @@
 import test from 'ava';
-import m from './';
+import fnName from '.';
 
 test('named', t => {
-	t.is(m(function foo() {}), 'foo');
+	t.is(fnName(function foo() {}), 'foo'); // eslint-disable-line func-names
 });
 
 test('anonymous', t => {
-	t.is(m(function() {}), null); // eslint-disable-line
-	t.is(m(function () {}), null);
+	t.is(fnName(function() {}), undefined); // eslint-disable-line prefer-arrow-callback, space-before-function-paren
+	t.is(fnName(function () {}), undefined); // eslint-disable-line prefer-arrow-callback
 });
 
 test('arrow', t => {
-	t.is(m(() => {}), null);
+	t.is(fnName(() => {}), undefined);
 });
 
 test('nested', t => {
-	t.is(m(function () {
-		function nested() {}
-		nested();
-	}), null);
+	t.is(
+		fnName(function () { // eslint-disable-line prefer-arrow-callback
+			function nested() {}
+			nested();
+		}),
+		undefined
+	);
 });
 
 test('nested callback', t => {
@@ -26,7 +29,10 @@ test('nested callback', t => {
 		fn();
 	}
 
-	t.is(m(function () {
-		call(function callback() {});
-	}), null);
+	t.is(
+		fnName(function () { // eslint-disable-line prefer-arrow-callback
+			call(function callback() {}); // eslint-disable-line func-names
+		}),
+		undefined
+	);
 });

@@ -15,6 +15,8 @@ $ npm install fn-name
 ## Usage
 
 ```js
+const fnName = require('fn-name');
+
 fnName(function foo() {});
 //=> 'foo'
 ```
