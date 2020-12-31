@@ -1,4 +1,4 @@
-# fn-name [![Build Status](https://travis-ci.org/sindresorhus/fn-name.svg?branch=master)](https://travis-ci.org/sindresorhus/fn-name)
+# fn-name
 
 > Get the name of a named function
 
