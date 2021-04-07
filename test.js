@@ -1,22 +1,22 @@
 import test from 'ava';
-import fnName from '.';
+import functionName from './index.js';
 
 test('named', t => {
-	t.is(fnName(function foo() {}), 'foo'); // eslint-disable-line func-names
+	t.is(functionName(function foo() {}), 'foo'); // eslint-disable-line func-names
 });
 
 test('anonymous', t => {
-	t.is(fnName(function() {}), undefined); // eslint-disable-line prefer-arrow-callback, space-before-function-paren
-	t.is(fnName(function () {}), undefined); // eslint-disable-line prefer-arrow-callback
+	t.is(functionName(function() {}), undefined); // eslint-disable-line prefer-arrow-callback, space-before-function-paren
+	t.is(functionName(function () {}), undefined); // eslint-disable-line prefer-arrow-callback
 });
 
 test('arrow', t => {
-	t.is(fnName(() => {}), undefined);
+	t.is(functionName(() => {}), undefined);
 });
 
 test('nested', t => {
 	t.is(
-		fnName(function () { // eslint-disable-line prefer-arrow-callback
+		functionName(function () { // eslint-disable-line prefer-arrow-callback
 			function nested() {}
 			nested();
 		}),
@@ -30,7 +30,7 @@ test('nested callback', t => {
 	}
 
 	t.is(
-		fnName(function () { // eslint-disable-line prefer-arrow-callback
+		functionName(function () { // eslint-disable-line prefer-arrow-callback
 			call(function callback() {}); // eslint-disable-line func-names
 		}),
 		undefined

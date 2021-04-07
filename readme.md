@@ -4,23 +4,20 @@
 
 There is a [`name`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name) property on functions, but it's not supported in all browsers. This module tries that property then falls back to extracting the name from the function source.
 
-
 ## Install
 
 ```
 $ npm install fn-name
 ```
 
-
 ## Usage
 
 ```js
-const fnName = require('fn-name');
+import functionName from 'fn-name';
 
-fnName(function foo() {});
+functionName(function foo() {});
 //=> 'foo'
 ```
-
 
 ---
 

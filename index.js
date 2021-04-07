@@ -1,9 +1,7 @@
-'use strict';
-
-module.exports = fn => {
-	if (typeof fn !== 'function') {
+export default function functionName(function_) {
+	if (typeof function_ !== 'function') {
 		throw new TypeError('Expected a function');
 	}
 
-	return fn.displayName || fn.name || (/function ([^(]+)?\(/.exec(fn.toString()) || [])[1];
-};
+	return function_.displayName || function_.name || (/function ([^(]+)?\(/.exec(function_.toString()) || [])[1];
+}
